@@ -44,6 +44,14 @@ const nextConfig = {
         protocol: "https",
         hostname: process.env.NEXT_PUBLIC_MINIO_ENDPOINT,
       }] : []),
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'http',
+        hostname: 'images.unsplash.com',
+      },
     ],
   },
   serverRuntimeConfig: {
