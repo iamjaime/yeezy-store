@@ -78,7 +78,7 @@ const Hero = () => {
               <div
                 className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
-                <span className="text-white text-2xl font-bold tracking-wider scale-90 group-hover:scale-100 transition-transform duration-300">
+                <span className="text-white text-lg sm:text-xl md:text-2xl font-bold tracking-wider scale-90 group-hover:scale-100 transition-transform duration-300">
                   {image.alt}
                 </span>
               </div>
@@ -88,20 +88,20 @@ const Hero = () => {
       </div>
 
       {/* Floating Text Box */}
-      <div className="fixed top-[30vh] left-[35vw] w-[30vw] text-center z-50">
-        <h1 className="text-7xl md:text-9xl font-bold text-white mb-6 tracking-tighter">
+      <div className="absolute top-[30vh] left-[15vw] w-[70vw] md:left-[35vw] md:w-[30vw] text-center z-50">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold text-white mb-4 md:mb-6 tracking-tighter">
           YEEZY
         </h1>
-        <p className="text-xl md:text-2xl text-white mb-12 tracking-wide">
+        <p className="text-lg sm:text-xl md:text-2xl text-white mb-8 md:mb-12 tracking-wide">
           REDEFINING MODERN LUXURY
         </p>
         <div>
           <LocalizedClientLink
             href="/store"
-            className="group relative inline-block overflow-hidden bg-transparent border-2 border-white px-8 py-4"
+            className="group relative inline-block overflow-hidden bg-transparent border-2 border-white px-6 py-3 md:px-8 md:py-4"
           >
             <span className="absolute inset-0 bg-white transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0"></span>
-            <span className="relative text-lg uppercase tracking-wider text-white group-hover:text-black transition-colors duration-300">
+            <span className="relative text-base md:text-lg uppercase tracking-wider text-white group-hover:text-black transition-colors duration-300">
               Shop Collection
             </span>
           </LocalizedClientLink>
