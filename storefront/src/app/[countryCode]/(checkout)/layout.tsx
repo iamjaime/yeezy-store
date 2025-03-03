@@ -1,7 +1,6 @@
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import ChevronDown from "@modules/common/icons/chevron-down"
-import MedusaCTA from "@modules/layout/components/medusa-cta"
-
+import Nav from "@modules/layout/templates/header"
 export default function CheckoutLayout({
   children,
 }: {
@@ -10,6 +9,7 @@ export default function CheckoutLayout({
   return (
     <div className="w-full bg-white relative small:min-h-screen">
       <div className="h-16 bg-white border-b ">
+        <Nav />
         <nav className="flex h-full items-center content-container justify-between">
           <LocalizedClientLink
             href="/cart"
@@ -29,15 +29,12 @@ export default function CheckoutLayout({
             className="txt-compact-xlarge-plus text-ui-fg-subtle hover:text-ui-fg-base uppercase"
             data-testid="store-link"
           >
-            Medusa Store
+            
           </LocalizedClientLink>
           <div className="flex-1 basis-0" />
         </nav>
       </div>
       <div className="relative" data-testid="checkout-container">{children}</div>
-      <div className="py-4 w-full flex items-center justify-center">
-        <MedusaCTA />
-      </div>
     </div>
   )
 }
