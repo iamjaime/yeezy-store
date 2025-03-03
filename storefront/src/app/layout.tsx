@@ -12,7 +12,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
       <body>
         <main className="relative">{props.children}</main>
         <footer>
-          <h1>THIS IS A TEST FOOTER</h1>
+          <h1>THIS IS A TEST FOOTER blah</h1>
         </footer>
       </body>
     </html>
